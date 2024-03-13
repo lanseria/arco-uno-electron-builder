@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "jsx": "preserve",
+    "lib": ["ESNext", "dom", "dom.iterable"],
+    "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "paths": {
+      "#preload": ["../preload/src/index"],
+      "/@/*": ["./src/*"]
+    },
+    "types": ["node"],
+    "strict": true,
+    "sourceMap": false,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.vue",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "types/**/*.d.ts",
+    "../../types/**/*.d.ts"
+  ],
+  "exclude": ["**/*.spec.ts", "**/*.test.ts", "dist", "dev-dist", "node_modules"]
+}
